@@ -26,11 +26,11 @@
 // console.log(reversed);
 
 //3
-// String.prototype.customCapitalize=function(){
-//     return this.replace(/[aeiou]\w*/gi, function(match){
-//         return match.toUpperCase();
-//     });
-// }
-// let str = "hello";
-// let customCapitalize = str.customCapitalize();
-// console.log(customCapitalize);
+String.prototype.customCapitalize=function(){
+    return this.replace(/[aeiou]/g, function(match){
+        return match.toUpperCase();
+    });
+}
+let str = "salam aleykum";
+let customCapitalize = str.customCapitalize();
+console.log(customCapitalize);
